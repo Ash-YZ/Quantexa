@@ -1,0 +1,35 @@
+.tableWrapper {
+  display: inline-block;
+  height: 300px;
+  overflow: auto;
+}
+
+.dataTable {
+  border-collapse: collapse;
+  width: 100%;
+  
+  th {
+    position: sticky;
+    top: 0;
+    background-color: #DDD;
+    color: #271530;
+  }
+
+  th,
+  td {
+    padding: 1em .5em;
+    font-size: 12px;
+  }
+
+  tr {
+    color: #FFF;
+    border-bottom: 1px solid black;
+  }
+
+  tr:nth-child(even) {background: #301a3b}
+  tr:nth-child(odd) {background: #190d1f}
+
+  td {
+    z-index: -1;
+  }
+}

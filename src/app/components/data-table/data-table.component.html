@@ -1,0 +1,26 @@
+<div class="row">
+  <div class="col-12">
+    <h2>{{title}}</h2>
+  </div>
+</div>
+<div class="row">
+  <div class="tableWrapper col-12">
+    <table class="dataTable"
+           *ngIf="spendData.length">
+      <thead>
+        <tr>
+          <th *ngFor="let item of spendData[0] | keyvalue : preserveOrder">
+            <span>{{item.key}}</span>
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let record of spendData; let i = index;">
+          <td *ngFor="let item of record | keyvalue : preserveOrder">
+            <span>{{item.value}}</span>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

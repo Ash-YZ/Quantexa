@@ -1,0 +1,15 @@
+<div class="row">
+  <div class="col-12">
+    <div style="display: block">
+      <canvas baseChart
+              [datasets]="lineChartConfig.chartData"
+              [labels]="lineChartConfig.chartLabels"
+              [options]="lineChartConfig.chartOptions"
+              [colors]="lineChartConfig.chartColors"
+              [legend]="lineChartConfig.chartLegend"
+              [chartType]="lineChartConfig.chartType"
+              [plugins]="lineChartConfig.chartPlugins">
+      </canvas>
+    </div>
+  </div>
+</div>
